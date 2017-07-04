@@ -16,6 +16,7 @@ bool charArrayToInt(char* in, int &out){
 }
 
 int main(int argc, char* args[]){
+    // Demo_lib::helloWorld();
     // check number of input
     if (argc !=2){
         std::cout<<"error input"<< std::endl;

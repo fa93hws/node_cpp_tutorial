@@ -1,11 +1,10 @@
 'use strict'
 const path = require('path')
+const test = require('./cpp/build/Release/test');
 module.exports = {
-    run0: function(req,res){
-        let test = require('./cpp/build/Release/test');
-        test.hello('test', function(data) {
-            console.log(data);
-            res.send(data);
-        });
+    run0: function(req,res){        
+        const obj = new test.Wrapper(15);
+        console.log(obj.getA());
+        res.send("123");
     }
 }
