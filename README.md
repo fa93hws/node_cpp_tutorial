@@ -2,6 +2,17 @@
 
 ---
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [node cpp performance test](#)
+	- [Useage](#)
+		- [Install](#)
+		- [Load test](#)
+	- [Background](#)
+	- [Child_process running bash calling cpp](#)
+	- [Call cpp directly by create a wrapper](#)
+		- [Appendics: mean latency (ms)](#)
+        
 ## Useage
 ### Install
 clone it first
