@@ -1,5 +1,5 @@
 CC=g++
-CFLAG=-g -Wall
+CFLAG=-O2 -s -DNDEBUG
 
 all: demo_lib.o
 	$(CC) $(CFLAG) -o hello.exe demo_lib.o main.cpp
