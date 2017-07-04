@@ -60,7 +60,7 @@ typings/
 # ignore cpp built file
 *.o
 *.exe
-cpp/build/*
+cpp_wrap/build/*
 
 # ignore IDE configure
 .vscode

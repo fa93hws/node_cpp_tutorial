@@ -3,8 +3,9 @@ const express = require('express');
 const app = express();
 const bash = require('./callBash.js');
 const cpp  =require('./callCpp.js');
+const native = require('./native.js')
 
-const testInt = 12345;
+const testInt = 123456;
 app.get('/',function(req,res){
     res.send('hello world!\r\n');
 })
@@ -20,7 +21,12 @@ app.get('/b1',function(req,res){
 
 // call wrapped cpp
 app.get('/c0',function(req,res){
-    cpp.run0(req,res);
+    cpp.run0(testInt,res);
+})
+
+// call native js method
+app.get('/n0',function(req,res){
+    native.run(testInt,res);
 })
 
 app.listen(3000,function(){

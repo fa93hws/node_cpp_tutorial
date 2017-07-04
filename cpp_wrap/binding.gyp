@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "test",
-      "sources": [ "test.cpp","wrapper.cpp","demo_lib.cpp" ]
+      "sources": [ "test.cpp","../cpp/demo_lib.cpp" ]
     }
   ]
 }
