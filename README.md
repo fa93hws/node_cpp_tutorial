@@ -2,6 +2,7 @@
 
 ---
 
+
 [TOC]
 
 ## Useage
@@ -70,7 +71,8 @@ if we apply a loading test by the help of this [library][2] and run a light test
 > loadtest http://localhost:3000/n0 -t 90 -c 30 --rps 120
 
 The result then will be surprising with a 0.012s on each request averagely.
-> INFO Completed requests:  8501
+```
+INFO Completed requests:  8501
 INFO Total errors:        0
 INFO Total time:          90.00388448599999 s
 INFO Requests per second: 94
@@ -82,7 +84,7 @@ INFO   90%      6053 ms
 INFO   95%      10120 m
 INFO   99%      66495 ms
 INFO  100%      66837 ms (longest request)
-
+```
 The problem is obvious that we must to pass this cpu heavy task to some other thread or process. The tool we can use is cpp library.
 
 ## Child_process running bash calling cpp
@@ -97,7 +99,8 @@ exec(cmd, function(error, stdout, stderr) {
 });
 ```
 The result will be much better than that in native javascript. It is possible to handle 206 requests per second with a close average waiting time.
-> INFO Completed requests:  18556
+```
+INFO Completed requests:  18556
 INFO Total errors:        0
 INFO Total time:          90.00407294 s
 INFO Requests per second: 206
@@ -109,6 +112,7 @@ INFO   90%      9376 ms
 INFO   95%      17290 ms
 INFO   99%      33479 ms
 INFO  100%      65439 ms (longest request)
+```
 
 ## Call cpp directly by create a wrapper
 
