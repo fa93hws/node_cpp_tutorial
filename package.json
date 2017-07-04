@@ -1,0 +1,23 @@
+{
+  "name": "node_cpp_tutorial",
+  "version": "1.0.0",
+  "description": "tutorial about node calling c++ file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fa93hws/node_cpp_tutorial.git"
+  },
+  "keywords": [
+    "node",
+    "c++"
+  ],
+  "author": "fa93hws",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fa93hws/node_cpp_tutorial/issues"
+  },
+  "homepage": "https://github.com/fa93hws/node_cpp_tutorial#readme"
+}
