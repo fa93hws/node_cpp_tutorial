@@ -1,10 +1,9 @@
 # node cpp performance test
 
-标签（空格分隔）： node cpp
-
 ---
 
 [TOC]
+
 ## Useage
 ### Install
 clone it first
@@ -28,9 +27,13 @@ node index
 ```
 
 There are four apis available.
+
 localhost:3000/n0 is using native javascript
+
 localhost:3000/b0 is using child process with exec
+
 localhost:3000/b1 is using child process with spawn
+
 localhost:3000/c0 is using wrapper
 
 ### Load test
