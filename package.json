@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/fa93hws/node_cpp_tutorial/issues"
   },
-  "homepage": "https://github.com/fa93hws/node_cpp_tutorial#readme"
+  "homepage": "https://github.com/fa93hws/node_cpp_tutorial#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
