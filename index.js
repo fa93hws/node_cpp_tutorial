@@ -1,4 +1,5 @@
 'use strict'
+global.calTime = 0;
 const express = require('express');
 const app = express();
 const bash = require('./callBash.js');

@@ -61,6 +61,7 @@ typings/
 *.o
 *.exe
 cpp_wrap/build/*
+build/*
 
 # ignore IDE configure
 .vscode
