@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fa93hws/node_cpp_tutorial#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "path": "^0.12.7"
   }
 }
