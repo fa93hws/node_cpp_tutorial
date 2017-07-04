@@ -6,8 +6,5 @@ module.exports = {
         const out = test.getPrimeUnder();
         console.log(out);
         res.send(out.toString());
-        // const obj = new test.Wrapper(15);
-        // console.log(obj.getA());
-        // res.send("123");s
     }
 }
